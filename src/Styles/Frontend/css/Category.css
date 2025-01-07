@@ -1,0 +1,68 @@
+.container {
+  margin: 80px auto 55px auto;
+}
+
+.main_title_2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col-lg-3, .col-6 {
+  flex: 1 0 21%; /* This ensures 4 items per row */
+  max-width: 21%; /* This also ensures 4 items per row */
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+@media (max-width: 992px) {
+  .col-lg-3, .col-6 {
+    flex: 1 0 46%; /* This ensures 2 items per row on smaller screens */
+    max-width: 46%; /* This also ensures 2 items per row */
+  }
+}
+
+@media (max-width: 576px) {
+  .col-lg-3, .col-6 {
+    flex: 1 0 100%; /* This ensures 1 item per row on extra small screens */
+    max-width: 100%; /* This also ensures 1 item per row */
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.detail a {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  color: #000;
+  text-decoration: none;
+}
+
+.detail h6 {
+  margin-top: 10px;
+  color: #fe900d;
+}

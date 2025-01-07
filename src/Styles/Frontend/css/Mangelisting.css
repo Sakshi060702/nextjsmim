@@ -1,0 +1,232 @@
+.keyword-badge {
+    display: inline-block;
+    border: 2px solid #a7a3a3;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .keyword-remove-btn {
+    background:grey;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin-left: 5px;
+  }
+  
+  .keyword-remove-btn:hover {
+    background: red;
+  }
+
+  .plus-button {
+    font-size: 40px;
+    color: white;
+    background-color: rgb(95, 92, 92);
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    
+  }
+
+  .popup {
+    position: fixed;
+    bottom: -100px; /* Start position outside the viewport */
+    right: 20px;
+    padding: 20px;
+    background-color: white;
+    color:red;
+    border-radius: 5px;
+    animation: slideUp 0.5s forwards; /* Slide up animation */
+    z-index: 1000;
+    height: 100px;
+    width: 400px;
+   
+  }
+  @keyframes slideUp {
+    to {
+      bottom: 20px; /* Final position inside the viewport */
+    }
+  }
+
+  .custom-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px; /* Adjust width */
+    height: 20px; /* Adjust height */
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    margin-right: 8px;
+  }
+  
+  .custom-checkbox:checked {
+    border-color: orange;
+    background-color: orange;
+  }
+  
+  .custom-checkbox:checked::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 4px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .label-text-spacing {
+    margin-left: 8px;
+  }
+  .label-spacing {
+    display: flex;
+    align-items: center;
+  }
+
+  .button {
+    background-color: #fb830d;
+    color: white;
+    margin-left: 10px;
+    border: 1px solid orange;
+  }
+  
+  .button:hover {
+    background-color: #fb830d;
+  }
+  
+  .button.selected {
+    background-color: #fb830d;
+    color: white; /* Explicitly set the color to white */
+  }
+
+  
+  .file-input {
+    border: 2px solid grey;
+    height: 50px;
+    width: 500px;
+  }
+  .file-input2{
+    height: 50px;
+    width: 500px;
+  }
+  
+  /* Styles for smaller screens (e.g., mobile devices) */
+  @media (max-width: 768px) {
+    .file-input {
+      width: 100%; /* Full width for mobile view */
+      box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+    }
+    .file-input2{
+      width: 100%;
+    }
+  }
+
+
+  /* for upload image button */
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the gap between buttons as needed */
+}
+
+.button {
+  flex: 1 1 calc(50% - 10px); /* 50% width minus the gap */
+  box-sizing: border-box;
+  /* Add other button styles as needed */
+}
+
+
+
+
+/* Adjustments for larger screens (desktop) */
+@media (min-width: 768px) {
+  .button {
+    flex: 1; /* Default full width for desktop view */
+    max-width: none;
+  }
+}
+
+/*for working hours*/
+/* Default width for all input elements */
+.input-width {
+  width: 100%; /* Adjust as necessary */
+}
+
+/* Width for larger screens */
+@media (min-width: 768px) {
+  .input-width {
+    width: 350%;
+  }
+}
+
+/* Width for smaller screens */
+@media (max-width: 767px) {
+  .input-width {
+    width: 100%; /* Adjust as necessary */
+    padding-left: 5px;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+ 
+  .tab .link-box {
+      width: 30%; 
+  }
+}
+
+
+/*Labour naka */
+@media (max-width: 768px) {
+  .link-box {
+    flex-basis: 100%; /* Each box takes up the full width */
+    margin-bottom: 15px;
+  }
+}
+
+
+
+.seolinkgroup{
+  width: 251px;
+}
+@media (max-width:767px) {
+  .seolinkgroup{
+    width: 287px;
+  }
+}
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  

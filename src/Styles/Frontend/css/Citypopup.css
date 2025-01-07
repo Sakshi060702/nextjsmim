@@ -1,0 +1,139 @@
+.popupcity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popupcity-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popupcity-content {
+    position: relative;
+    background: rgb(255, 254, 254);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 350px;
+  }
+
+
+  .city-wrapper {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .city-icon {
+    cursor: pointer;
+  }
+  
+  .city-sub-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 337%;
+    transform: translateX(-50%);
+    background-color: rgb(230, 224, 224);
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+
+  
+   
+  }
+  .city-sub-options > div {
+    margin: 0 10px;
+  }
+  
+  .city-wrapper:hover .city-sub-options {
+    display: flex;
+  }
+  
+
+
+  .cityimage-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .city-wrapper,
+  .city-icon {
+    text-align: center;
+    /* flex: 1 1 20%; 
+    max-width: 20%;
+    margin: 10px; */
+  }
+  @media (max-width:767px) {
+    .popupcity-content {
+      position: relative;
+      background: rgb(255, 254, 254);
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      height: 520px;
+    }
+  }
+ 
+  /* @media (max-width: 767px) {
+  .city-sub-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(230, 224, 224);
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .city-sub-options div {
+    text-align: center; 
+  }
+
+  .city-sub-options button {
+    width: 100%; 
+  }
+} */
+
+  
+  
+  @media (max-width: 768px) {
+    .city-wrapper,
+    .city-icon {
+      flex: 1 1 45%; /* 2 items per row */
+      max-width: 45%;
+
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .city-wrapper,
+    .city-icon {
+      flex: 1 1 30%; /* 3 items per row */
+      max-width: 30%;
+    }
+  }
+  
+  

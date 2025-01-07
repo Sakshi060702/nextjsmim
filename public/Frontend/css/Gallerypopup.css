@@ -1,0 +1,167 @@
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 116%;
+    height: 130%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content{
+    position: relative;
+    max-width: 61%;
+    max-height: 70%;
+    bottom: 100px;
+    right: 0px;
+}
+
+@media (max-width:767px) {
+    .modal-content{
+        position: relative;
+        max-width: 61%;
+        max-height: 70%;
+        bottom: 100px;
+        right: 34px;
+    }
+}
+
+.modal-image{
+    width: 75%;
+    height: 80%;
+    border-radius: 8px;
+
+}
+@media (max-width:767px) {
+    .modal-image{
+        width: 106%;
+        height: 80%;
+        border-radius: 8px;
+    
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 278px;
+    background: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+
+  /* Client modal popup */
+
+  .CLmodal-overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 116%;
+    height: 130%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.CLmodal-content{
+    position: relative;
+    max-width: 61%;
+    max-height: 70%;
+    bottom: 100px;
+    right: 105px;
+}
+
+@media (max-width:767px) {
+    .CLmodal-content{
+        position: relative;
+        max-width: 61%;
+        max-height: 70%;
+        bottom: 100px;
+        right: 35px;
+    }
+    
+}
+
+.CLmodal-image{
+    width: 505px;
+    height: 408px;
+    border-radius: 8px;
+
+}
+
+.CLmodal-close {
+    position: absolute;
+    top: 10px;
+    right: 9px;
+    background: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+
+
+
+  /* Gallery modal popup */
+  .Gmodal-overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 116%;
+    height: 130%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.Gmodal-content{
+    position: relative;
+    max-width: 61%;
+    max-height: 70%;
+    bottom: 100px;
+    right: 105px;
+}
+@media (max-width:767px) {
+    .Gmodal-content{
+        position: relative;
+        max-width: 61%;
+        max-height: 70%;
+        bottom: 100px;
+        right: 34px;
+    }
+}
+
+.Gmodal-image{
+    width: 505px !important;
+    height: 408px !important;
+    border-radius: 8px;
+
+}
+
+.Gmodal-close {
+    position: absolute;
+    top: 10px;
+    right: 9px;
+    background: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }

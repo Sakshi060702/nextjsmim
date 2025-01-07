@@ -1,0 +1,35 @@
+/* Example CSS for mobile menu */
+@media (max-width: 768px) {
+  .main-menu {
+    display: none; /* Hide the main menu by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+  }
+
+  .main-menu.open {
+    display: block; /* Show the main menu when open class is added */
+  }
+
+  .mobile-menu {
+    display: block; /* Show the hamburger menu button */
+    position: relative;
+    float: right;
+    margin-top: 10px;
+    margin-right: 15px;
+  }
+
+  .mobile-menu .btn_mobile {
+    display: block;
+    padding: 10px;
+  }
+
+  .mobile-menu .hamburger {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+}

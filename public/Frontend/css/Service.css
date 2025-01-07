@@ -1,0 +1,425 @@
+.image{
+    margin-right: 6px;
+    width: 25px;
+    height: 25px;
+    margin-left: -11px;
+}
+.linkcolor{
+    color: black;
+}
+.bigimage{
+    width: 50px;
+    height: 37px;
+}
+
+/* subcategory css */
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.categories-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.categories-list li {
+  flex: 1 1 calc(25% - 10px); /* Four items per row */
+  box-sizing: border-box;
+  padding: 10px;
+  background: #f9f9f9;
+  color: #fe900d;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'PoppinsMedium';
+ 
+  text-align: left;
+}
+
+.categories-list li p {
+  margin: 0;
+  color: #fe900d;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'PoppinsMedium';
+}
+
+
+.categories-list .item{
+  /* width: 315px; */
+  width: 420px;
+  
+}
+.categories-list .item .icon{
+  display: block;
+}
+
+/* below code to if 1 category then show in center with full name */
+.subcategories-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+
+.spanstyle{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  margin-right: 10px;
+}
+.imgstyle{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.Linkstyle{
+  color: black;
+  /* font-weight: bold; */
+  display: block;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Linkstyle:hover {
+  color: #fe900d; /* Change to the color you want on hover */
+}
+
+.categorylink{
+  margin-right: 6px !important;
+  font-size: 14px;
+}
+@media (max-width:767px) {
+  .categorylink{
+    /* margin-right: 11px !important; */
+  }
+}
+
+.subcategories-list .item {
+  display: flex;
+  align-items: flex-start !important;
+}
+
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .subcategories-list .item {
+    display: flex;
+    align-items: flex-start !important;
+    /* justify-content: space-between; */
+    /* width: 100%; */
+  }
+
+  .icon {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .category-link {
+    flex-grow: 1;
+    padding-right: 10px;
+    text-align: left;
+  }
+
+  .more-link {
+    color: orange;
+    white-space: nowrap;
+  }
+
+  .subcategories-list .item span,
+  .subcategories-list .item a {
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media (max-width: 991px) {
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+.bannerimg{
+  height: auto;
+  object-fit: cover;
+  /* animation: flash 1.5s infinite; */
+}
+@media (max-width:767px) {
+  .bannerimg{
+    height: 100%;
+    object-fit: inherit;
+    animation: flashEffect 0.5s ease-in-out !important;
+  }
+}
+
+
+@keyframes flashEffect {
+  0% {
+    opacity: 0.2;
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 1;
+    filter: brightness(1.5);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+}
+
+
+
+/* @keyframes flash {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+} */
+
+
+/* Last category alignment logic */
+.last-category-left-align {
+  justify-content: flex-start !important;
+}
+
+
+.carousel-fade .carousel-item{
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+  opacity: 1;
+}
+
+
+
+/* .fade-image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+} */
+@media (max-width:767px) {
+  .fade-image-container {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    overflow: hidden;
+  }
+}
+
+.carouelheight{
+  height: 110px;
+  width: 50%;
+}
+@media (max-width:767px) {
+  .carouelheight{
+    height: 100px;
+    width: 100%;
+  }
+}
+
+.carasoualVerticalHeight{
+  width: 100%;;
+}
+@media (max-width:767px) {
+  .carasoualVerticalHeight{
+    width: 100%;;
+  }
+}
+.carouselshow{
+  display: block;
+}
+@media (max-width:767px) {
+  .carouselshow{
+    display: none;
+  }
+}
+
+
+.fade-image {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out; 
+}
+
+.carousel-item.active .fade-image {
+  opacity: 2; 
+}
+
+.keywordbox{
+  height: auto; 
+  min-height: 50px; 
+  overflow: auto; 
+  box-sizing: border-box; 
+  padding: 15px; 
+}
+
+
+/* .fade-in-out {
+  animation: zoomInOut 3s ease-in-out;
+}
+
+@keyframes zoomInOut {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1.05); 
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1.05); 
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+} */
+
+/* .fade-effect {
+  animation: fadeInOut 10s ease-in-out infinite; 
+  transition: opacity 2s ease-in-out; 
+} */
+
+/* Keyframes to control the fade-in and fade-out */
+/* @keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} */
+
+
+.servicecontainer{
+  max-height: 100vh;
+  min-height: 73vh;
+}
+@media (max-width:767px) {
+  .servicecontainer{
+    max-height: 200vh !important;
+    min-height: 50vh !important;
+    margin: 0 !important;
+  }
+}
+
+.contractorcontainer{
+  max-height: 409vh;
+  min-height: 73vh;
+}
+@media (max-width:767px) {
+  .contractorcontainer{
+    max-height: 200vh !important;
+    min-height: 50vh !important;
+    margin: 0 !important;
+  }
+}
+
+/* Fading effect for both fade-in and fade-out */
+/* Container for the image to apply the animation */
+/* Container for the image to apply the animation */
+/* Container for the image to apply the animation */
+.fade-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Animation for fade-in, fade-out, zoom-in, and zoom-out */
+.fade-effect {
+  animation: fadeInOutZoom 30s ease-in-out infinite;
+}
+
+@keyframes fadeInOutZoom {
+  0% {
+    opacity: 0;
+    transform: scale(1); /* Start at normal size */
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1.1); /* Zoom in slightly */
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1); /* Stay zoomed in */
+  }
+  90% {
+    opacity: 1;
+    transform: scale(1); /* Zoom out to normal size */
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1); /* Fade out and reset size */
+  }
+}
+
+/* Apply the same effect on the second carousel */
+.carouselshow .bannerimg {
+  animation: fadeInOutZoom 10s ease-in-out infinite;
+}
+
+.carouelheight .bannerimg {
+  animation: fadeInOutZoom 10s ease-in-out infinite;
+}
+
+.carasoualVerticalHeight .bannerimg{
+  animation: fadeInOutZoom 10s ease-in-out infinite;
+}
+
+/* .custom-carousel .carousel-item {
+  transition: opacity 2s ease-in-out;
+} */
+
+
+
+
